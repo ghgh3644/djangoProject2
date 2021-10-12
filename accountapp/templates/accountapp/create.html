@@ -1,13 +1,37 @@
+{#{% extends 'base.html' %}#}
+{##}
+{#{% block content %}#}
+{##}
+{#    <div>#}
+{#        <form action="{% url 'accountapp:create' %}" method="post">#}
+{#            {% csrf_token %}#}
+{#            {{ form }}#}
+{#            <input type="submit" class="btn btn-primary">#}
+{#        </form>#}
+{#    </div>#}
+{##}
+{##}
+{#{% endblock %}#}
+
+
 {% extends 'base.html' %}
+{% load bootstrap4 %}
 
 {% block content %}
+    <div class="text-center mw-500 m-auto" style="padding-left: 500px;">
+        <div class="m-5">
+            <h4>Sign up</h4>
+        </div>
+        <div>
+            <form action="{% url 'accountapp:create' %}" method="post">
+                {% csrf_token %}
+                {% bootstrap_form form %}
+                <div class="m-5">
+                    <input type="submit" class="btn btn-dark rounded-pill px-5">
+                </div>
 
-    <div>
-        <form action="{% url 'accountapp:create' %}" method="post">
-            {% csrf_token %}
-            {{ form }}
-            <input type="submit" class="btn btn-primary">
-        </form>
+            </form>
+        </div>
     </div>
 
 

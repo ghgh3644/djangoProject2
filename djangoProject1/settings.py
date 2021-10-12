@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'accountapp',
-    'indextest'
+    'indextest',
+    'bootstrap4',
 ]
 
 MIDDLEWARE = [
@@ -133,5 +134,5 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-LOGIN_REDIRECT_URL = reverse_lazy('accountapp:hello_world')
+LOGIN_REDIRECT_URL = reverse_lazy('indextest:index')
 LOGOUT_REDIRECT_URL = reverse_lazy('accountapp:login')

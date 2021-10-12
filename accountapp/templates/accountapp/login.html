@@ -1,18 +1,40 @@
-{% extends 'base.html' %}
+{#{% extends 'base.html' %}#}
+{##}
+{##}
+{#{% block content %}#}
+{##}
+{#    <div style="text-align: center">#}
+{#        <div>#}
+{#            <h4>Login</h4>#}
+{#        </div>#}
+{#        <div>#}
+{#            <form action="post">#}
+{#                {% csrf_token %}#}
+{#                {{ form }}#}
+{#                <input type="submit">#}
+{#            </form>#}
+{#        </div>#}
+{#    </div>#}
+{#{% endblock %}#}
 
+
+{% extends 'base.html' %}
+{% load bootstrap4 %}
 
 {% block content %}
-
-    <div style="text-align: center">
-        <div>
+    <div class="text-center mw-500 m-auto" style="text-align: center;">
+        <div class="m-5">
             <h4>Login</h4>
         </div>
         <div>
-            <form action="post">
+            <form action="{% url 'accountapp:login' %}" method="post">
                 {% csrf_token %}
-                {{ form }}
-                <input type="submit">
+                {% bootstrap_form form %}
+                <div class="m-5">
+                    <input type="submit" class="btn btn-dark rounded-pill px-5">
+                </div>
             </form>
         </div>
     </div>
+
 {% endblock %}
