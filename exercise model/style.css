@@ -1,15 +1,14 @@
 body {
 	font: 24px/30px 'Noto Sans CJK KR', Noto Sans KR, sans-serif;
 	height: 650px;
-	background-image: url('배경.jpg');
-	background-repeat : no-repeat;
-	background-size: cover;
-    /* background-size: 101% 127%; */
+	background: url('pl.jpg');
+	background-size: 1400px;
+
 }
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:600,400,300);
  .frame {
 	 position: absolute;
-	 top: 50%;	
+	 top: 50%;
 	 left: 70%;
 	 width: 400px;
 	 height: 400px;
@@ -23,7 +22,7 @@ body {
 	 background: -webkit-linear-gradient(top, #28404e 0%, #1c2e38 100%);
 	 background: linear-gradient(to bottom, #28404e 0%, #1c2e38 100%); */
 	 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#28404e', endColorstr='#1c2e38',GradientType=0);
-	 color: #0b0e0b;
+	 color: #4AB34A;
 	 font-family: 'Open Sans', Helvetica, sans-serif !important;
 	 -webkit-font-smoothing: antialiased !important;
 	 -moz-osx-font-smoothing: grayscale !important;

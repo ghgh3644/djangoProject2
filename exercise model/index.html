@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
 
@@ -8,12 +7,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
 
     <!-- Required meta tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -29,7 +27,6 @@
     <script type="text/javascript" src="text.js"></script>
 </head>
 <body>
-    
     <div class="container mt-5">
         
         <div class="frame">
@@ -60,9 +57,9 @@
         </div>
         <h1 style="display: inline-block; font-family: 'Bebas Neue', cursive; font-size: 65px; color: #4AB34A;">Squat Battle</h1>
         <button style="float: right; margin: 1px" class="btn btn-outline-success" type="button">돌아가기</button>
-        <button style="float: right; margin: 1px" class="btn btn-outline-success" type="button" onclick="init(); $('#stopbtn').trigger('click'); stopAct2();">스탑</button>
-        <button style="float: right; margin: 1px" class="btn btn-outline-success" type="button" onclick="init(); $('#startbtn').trigger('click'); startAct2();">시작</button>
-        <!-- <button style="float: right; margin: 1px" class="btn btn-outline-success" type="button"><a href="posture.html">바른 운동자세</a></button> -->
+        <button style="float: right; margin: 1px" class="btn btn-outline-success" type="button" onclick="init();stopAct2();">중지</button>
+        <button style="float: right; margin: 1px" class="btn btn-outline-success" type="button" onclick="init(); startAct2();">시작</button>
+        <button style="float: right; margin: 1px" class="btn btn-outline-success" type="button" onclick="window.open('j.html') ">자세</button>
         <div><canvas id="canvas"></canvas></div>
         <div id="label-container"></div>
         
@@ -133,8 +130,8 @@
             if (prediction[0].probability.toFixed(2) > 0.90) {
                 if (status == "squat") {
                     count++
-                    var audio = new Audio(count % 10 + '.mp3');
-                    audio.play();
+                    // var audio = new Audio(count % 10 + '.mp3');
+                    // audio.play();
                     progress = progress-32.7
                     if(progress <= 0) {
                         progress = 327-32.7
@@ -147,11 +144,11 @@
             } else if (prediction[1].probability.toFixed(2) == 1.00) {
                 status = "squat"
             } else if (prediction[2].probability.toFixed(2) == 1.00) {
-                if (status == "squat" || status == "stand") {
-                    var audio = new Audio('bent.mp3');
-                    audio.play();
-                }
-                status = "bent"
+                // if (status == "squat" || status == "stand") {
+                //     var audio = new Audio('bent.mp3');
+                //     audio.play();
+                // }
+                // status = "bent"
             }
             //for (let i = 0; i < maxPredictions; i++) {
             //    const classPrediction =
@@ -177,7 +174,7 @@
     </script>
 
     <div id='head_text' style="position: relative; left: 1rem; top: 130px;">
-        <div id='text' style="width: 90%; height: 150px; text-align: center; font-family: 'Do Hyeon', sans-serif; font-size: 30px;"></div>
+        <div id='text' style="width: 90%; height: 150px; text-align: center; font-family: 'Do Hyeon', sans-serif; font-size: 30px; color: #4AB34A;"></div>
     </div>
 
 </body>
