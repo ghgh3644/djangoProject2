@@ -39,6 +39,7 @@ stand & squat 포즈는 각각 90%이상일 때에 인식하도록 했다. 개�
 
 
 
-![endwith](https://user-images.githubusercontent.com/78592027/138638121-cddf8f5a-0f41-4809-89df-c4ac792349a3.jpg)
+![상장](https://user-images.githubusercontent.com/78592027/147871100-57b1ee79-df3d-4d82-8105-e04c1f707786.jpg)
+
 
 [김태희](https://github.com/hale-in), [김태형](https://github.com/tae00909), [이건희](https://github.com/ghgh3644), [정은정](https://github.com/eeunn)
