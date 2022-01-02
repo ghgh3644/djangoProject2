@@ -38,8 +38,12 @@ stand & squat 포즈는 각각 90%이상일 때에 인식하도록 했다. 개�
 4. 운동회가 종료된 후 누적된 스쿼트 개수가 가장 많은 팀(구)가 승리
 
 
-
+![단체사진편집본](https://user-images.githubusercontent.com/78592027/147871218-6c4a4089-e534-462c-8837-e9a2773ea71c.jpg)
 ![상장](https://user-images.githubusercontent.com/78592027/147871100-57b1ee79-df3d-4d82-8105-e04c1f707786.jpg)
 
+## Team
 
-[김태희](https://github.com/hale-in), [김태형](https://github.com/tae00909), [이건희](https://github.com/ghgh3644), [정은정](https://github.com/eeunn)
+[김태희](https://github.com/hale-in)
+[김태형](https://github.com/tae00909)
+[이건희](https://github.com/ghgh3644)
+[정은정](https://github.com/eeunn)
