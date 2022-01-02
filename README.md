@@ -40,11 +40,12 @@ stand & squat 포즈는 각각 90%이상일 때에 인식하도록 했다. 개�
 ## 웹서비스 구현 화면
 ![홈페이지 캡쳐](https://user-images.githubusercontent.com/78592027/147871855-fe13badf-a616-43a6-ad4b-f6c46e631e66.png)
 
-
+## 수상 결과 및 관련 자료
+![심사결과](https://user-images.githubusercontent.com/78592027/147871908-b3e96ad3-7936-4d6b-ac63-dec6079e6761.png)
 ![단체사진편집본](https://user-images.githubusercontent.com/78592027/147871218-6c4a4089-e534-462c-8837-e9a2773ea71c.jpg)
 ![상장](https://user-images.githubusercontent.com/78592027/147871100-57b1ee79-df3d-4d82-8105-e04c1f707786.jpg)
 
-## 팀
+## 팀: 추천이알고싶다
 
  - [김태희](https://github.com/hale-in)
  - [김태형](https://github.com/tae00909)
